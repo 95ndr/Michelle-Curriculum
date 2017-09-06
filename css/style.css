@@ -7,17 +7,37 @@ font-family: 'Bungee Hairline', cursive;*/
 
    body{
     margin: 0px;
-   box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Arapey', serif;
+    color:black;
+   }
+
+   .box{
+      margin: 0px;
+      padding:0px;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+   }
+
+   .cuadros{
+      position: absolute;
    }
 
 /*editanto div fondo*/
    .fondo{
-     box-sizing: border-box;
-     position: relative;
-    background: black;
-      margin: 10vh 25vw;
+      box-sizing: border-box;
+      position: absolute;
+      background: white;
+      top:10vh;
+      left: 25vw;
+      /*margin: 10vh 25vw;*/
       height:80vh;
       width: 50vw;
+      border-color: red;
+      border-style: solid;
+      border-width: 4px;
+      border-radius: 1pc;
 
    }
  
@@ -25,25 +45,59 @@ font-family: 'Bungee Hairline', cursive;*/
 /*editando el titulo grande*/
    #titulo{
       position:fixed;
-      left:20vw;
-      top:30px;
+      left:15vw;
+      top:30vh;
       height: auto;
       width: auto;
+      display:none;
    }
 
 
    #titulo h1{
       margin:0px;
       padding:0px;
-      font-family: 'Bungee Hairline', cursive;
-      font-size: 3rem;
-      color:Yellow;
-      text-shadow: 0px 3px black;
-      letter-spacing:10px;
+      font-size:8rem;
+      color:black;
+      text-shadow: 10px 0px black;
+      letter-spacing:-1px;
+      font-weight: 900;
    }
 
    /*editando menu de navegacion*/
 
    nav.navegacion{
-      transform:
+      top: 350px;
+      left:80vw;
+      position:absolute;
+      transform:rotate(-90deg);
+      width: 350px;
+      display: none;
+      padding: 0px;
+      margin:0px;
+   }
+
+   ul#secciones{
+      background: black;
+   }
+
+   ul#secciones a{
+      color:white;
+      text-decoration: none;
+      font-size:1.5rem;
+      margin-right: 5px;
+
+      
+   }
+
+/*editando icono*/
+
+   div.iconos{
+      position:absolute;
+      top:85vh;
+      left:18vw;
+   }
+
+   .iconos a i{
+      font-size: 1.5rem;
+      color: black;
    }
