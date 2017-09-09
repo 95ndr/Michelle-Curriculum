@@ -1,22 +1,18 @@
 $(document).ready(function(){
 // canvas
-
- var $c = $("#cuadros");
-
- $("#cuadros").width(window.innerWidth);
+function dibujarY(){
+	var $c = $("#cuadros");
+	$($c).width($(".box").width());
  var $w = $($c).width();
  $($c).attr('width', $w);
-
- $("#cuadros").height(window.innerHeight);
+ 
+ $($c).height($(".box").height());
  var $h = $($c).height();
  $($c).attr('height', $h);
-
-
-function dibujarY(){
 	
 	var i = 5;
 	while(i < $c.width() ){
-	$('canvas').drawLine({
+	$($c).drawLine({
   strokeStyle: 'white',
   strokeWidth: 1,
   x1: i, y1: 0,
@@ -28,6 +24,10 @@ function dibujarY(){
 
 dibujarY();
 //responsive 
+
+$(window).resize(dibujarY);
+
+
 
 
 
